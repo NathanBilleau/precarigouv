@@ -5,6 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  font-family: sans-serif;
   transition: .2s;
 }
 
@@ -23,6 +24,9 @@ body {
   background-image: url('pics/glace.jpg');
   background-repeat: repeat;
   background-size: 100px;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
 }
 
 .obstacle {
@@ -78,4 +82,26 @@ body {
   background-image: url('pics/4_violet.png');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.buttonContainer button {
+  padding: 5px;
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 1em;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.rules {
+  margin: 50px;
+  font-weight: bold;
 }

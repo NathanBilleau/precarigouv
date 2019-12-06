@@ -11,23 +11,34 @@
     <h1>404 game</h1>
     <h2>Niveau <span id="level">0</span></h2>
 
-    <p>Pour vous déplacer, utilisez les touches : <br/>
--ZQSD pour le 4 ROUGE<br/>
--IJKL pour le 0 JAUNE<br/>
--Flèches directionnelles pour le 4 VIOLET<br/>
-Votre pion ne s'arrête quand lorsqu'il entre en contact avec un mur ou un autre pion.<br/>
-Votre but est d'atteindre le DRAPEAU ROUGE avec le 4 ROUGE</p>
+    <div class="gameContainer">
+      <div class="rules">
+        <p>Pour vous déplacer, utilisez les touches : </p>
+        <ul>
+          <li>ZQSD pour le 4 ROUGE</li>
+          <li>IJKL pour le 0 JAUNE</li>
+          <li>Flèches directionnelles pour le 4 VIOLET</li>
+        </ul>
+        <p>Votre pion ne s'arrête quand lorsqu'il entre en contact avec un mur ou un autre pion.<br/>
+        Votre but est d'atteindre le DRAPEAU ROUGE avec le 4 ROUGE</p>
 
-    <div id="game">
-      <div id="flag"></div>
-      <div class="player" id="playerA"></div>
-      <div class="player" id="playerB"></div>
-      <div class="player" id="playerC"></div>
+      </div>
+
+      <div id="game">
+        <div id="flag"></div>
+        <div class="player" id="playerA"></div>
+        <div class="player" id="playerB"></div>
+        <div class="player" id="playerC"></div>
+      </div>
     </div>
 
 
-    <button type="button" name="button" onClick="nextLevel()" disabled id="nextBtn">Continuer</button>
-    <button type="button" name="button" onClick="resetProgression()">Reset progression</button>
+
+    <div class="buttonContainer">
+      <button type="button" name="button" onClick="resetProgression()">Reset progression</button>
+      <button type="button" name="button" onClick="nextLevel()" disabled id="nextBtn">Continuer</button>
+    </div>
+
 
     <script type="text/javascript" src="404/mousetrap.min.js"></script>
     <script type="text/javascript" src="404/main.js"></script>
