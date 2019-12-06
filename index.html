@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/contact-form.css">
@@ -26,7 +26,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
+                    <span class="icon-bar"></span>
                 </button>
                     <!-- <li>
                         <a class="navbar-left" href="#section1">
@@ -44,7 +44,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#section2">Simulations</a></li>
                     <li><a href="#section3">Ressources</a></li>
-                    <li><a href="lien vers le jeu">Gagner 10000€</a></li>   
+                    <li><a href="lien vers le jeu">Gagner 10000€</a></li>
                 </ul>
             </div>
         </div>
@@ -80,7 +80,7 @@
                         <div class="simulation-text">
 
                             <p class="sub-text" style="font-size: 18px;">
-                                <span class="underline">Veuillez remplir ce formulaire pour simuler les aides auquels vous avez droit</span> 
+                                <span class="underline">Veuillez remplir ce formulaire pour simuler les aides auquels vous avez droit</span>
                             </p>
 
                             <div class="col-sm-12 form wow fadeInRight">
@@ -129,23 +129,23 @@
 
                                     <label for="" class="underline">Touchez-vous les aides suivantes ?</label>
                                     <div class="checkbox">
-                                        <input type="checkbox" id="jeune"/>
+                                        <input type="checkbox" id="jeursane"/>
                                         <label for="rsa">RSA (Revenu de Solidarité Active)</label> <br>
-                                        <input type="checkbox" id="fleur"/>
+                                        <input type="checkbox" id="allocfamille"/>
                                         <label for="allocfamille">Allocations familiales</label> <br>
-                                        <input type="checkbox" id="faner"/>
+                                        <input type="checkbox" id="asschom"/>
                                         <label for="asschom">Assurance chômage</label> <br>
-                                        <input type="checkbox" id="rouleau"/>
+                                        <input type="checkbox" id="assmalad"/>
                                         <label for="assmalad">Assurance maladie</label> <br>
-                                        <input type="checkbox" id="precarite"/>
+                                        <input type="checkbox" id="assvieil"/>
                                         <label for="assvieil">Assurance vieillesse</label> <br>
-                                        <input type="checkbox" id="fleur"/>
+                                        <input type="checkbox" id="assmatern"/>
                                         <label for="assmatern">Assurance maternité, invalidité, décès</label> <br>
-                                        <input type="checkbox" id="faner"/>
+                                        <input type="checkbox" id="assveuv"/>
                                         <label for="assveuv">Assurance veuvage</label> <br>
-                                        <input type="checkbox" id="rouleau"/>
+                                        <input type="checkbox" id="csg"/>
                                         <label for="csg">CSG (contribution Sociale Généralisée)</label> <br>
-                                        <input type="checkbox" id="precarite"/>
+                                        <input type="checkbox" id="crds"/>
                                         <label for="crds">CRDS (contribution pour le remboursement de la dette sociale</label> <br>
                                     </div>
 
@@ -176,7 +176,7 @@
                                         <option value="oui">Oui</option>
                                         <option value="non">Non</option>
                                     </select>
-                                        
+
                                     <div style="margin: 0 auto; position: relative; width: 9%; height: 180px; display: inline-block" class="wow fadeIn delay-1s">
                                         <a href="https://youtu.be/dQw4w9WgXcQ"><input type="giveup" value="Abandonner" name="mailform" class="submit" id="submit-after"/></input></a>
                                     </div>
@@ -201,7 +201,7 @@
                 </div>
                     <div class="col-sm-12" style="margin-bottom: 30px;">
                         <p class="sub-text" style="font-size: 18px; color: #fff;">
-                            <span class="underline">Voici les ressources qui vous serons nécessaire pour vous sortir de la précarité   </span> 
+                            <span class="underline">Voici les ressources qui vous serons nécessaire pour vous sortir de la précarité   </span>
                         </p>
                     </div>
                     <div class="col-sm-12">
@@ -219,7 +219,7 @@
                                     <p class="sub-text underline" style="font-size: 22px;">Emploi</p>
                                     <a href="https://www.pole-emploi.fr/accueil/"><p class="sub-text"></p>https://www.pole-emploi.fr/accueil/</p></a>
                                     <a href="https://www.indeed.fr/"><p class="sub-text"></p>https://www.indeed.fr/</p></a>
-                                    <a href="https://www.directemploi.com/"><p class="sub-text"></p>https://www.directemploi.com/</p></a>                               
+                                    <a href="https://www.directemploi.com/"><p class="sub-text"></p>https://www.directemploi.com/</p></a>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +251,7 @@
 
 <script>
   window.onload = function () {
-   
+
       (function() // Code in a function to create an isolate scope
       {
       var speed = 500;
@@ -259,7 +259,7 @@
       var links = document.querySelectorAll("li a"); // Active links
       var href;
       for(var i=0; i<links.length; i++)
-      {  
+      {
           href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
           if(href !== null && href.length > 1 && href.substr(0, 1) == '#')
           {
@@ -272,7 +272,7 @@
                       var hop_count = speed/moving_frequency
                       var getScrollTopDocumentAtBegin = getScrollTopDocument();
                       var gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
-   
+
                       for(var j = 1; j <= hop_count; j++)
                       {
                           (function()
@@ -282,34 +282,34 @@
                           })();
                       }
                   }
-   
+
                   return false;
               };
           }
       }
-   
+
       var getScrollTopElement =  function (e)
       {
           var top = 0;
-   
+
           while (e.offsetParent != undefined && e.offsetParent != null)
           {
               top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
               e = e.offsetParent;
           }
-   
+
           return top;
       };
-   
+
       var getScrollTopDocument = function()
       {
           return document.documentElement.scrollTop + document.body.scrollTop;
       };
       })();
-       
+
   }
 </script>
-  
+
 <script>
       $(function () {
         $(document).scroll(function () {
@@ -321,4 +321,3 @@
 
 </body>
 </html>
-

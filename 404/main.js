@@ -6,10 +6,11 @@ const levelNumber = document.getElementById("level")
 
 
 
-var selectedLevel = parseInt(localStorage.level)
+var selectedLevel = parseInt(storage.getItem('level'))
 
-if (selectedLevel === undefined) {
+if (selectedLevel === NaN) {
   selectedLevel = 0
+  localStorage.setItem('level', selectedLevel)
 }
 
 levelNumber.innerHTML = selectedLevel + 1
