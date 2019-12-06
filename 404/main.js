@@ -202,7 +202,7 @@ move = (playerId, direction) => {
   }
 
     if (flagPosition.x === actualPosition('playerA').x && flagPosition.y === actualPosition('playerA').y) {
-      localStorage.setItem('level', selectedLevel + 1)
+      sessionStorage.setItem('level', selectedLevel + 1)
       nextBtn.disabled = false
     }
 
