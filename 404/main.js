@@ -4,14 +4,6 @@ const nextBtn = document.getElementById("nextBtn")
 const levelNumber = document.getElementById("level")
 
 
-nextLevel = () => {
-  location.reload()
-}
-
-resetProgression = () => {
-  localStorage.setItem('level', 0)
-  location.reload()
-}
 
 
 var selectedLevel = parseInt(localStorage.level)
@@ -22,6 +14,14 @@ if (selectedLevel === undefined) {
 
 levelNumber.innerHTML = selectedLevel + 1
 
+nextLevel = () => {
+  location.reload()
+}
+
+resetProgression = () => {
+  localStorage.setItem('level', 0)
+  location.reload()
+}
 
 var newObstacle
 
