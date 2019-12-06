@@ -5,13 +5,14 @@ const levelNumber = document.getElementById("level")
 
 
 
+var selectedLevel = parseInt(sessionStorage.getItem('level'))
 
-var selectedLevel = parseInt(storage.getItem('level'))
 
-if (selectedLevel === NaN) {
+if (sessionStorage.key('level') === null) {
   selectedLevel = 0
-  localStorage.setItem('level', selectedLevel)
+  sessionStorage.setItem('level', selectedLevel)
 }
+
 
 levelNumber.innerHTML = selectedLevel + 1
 
