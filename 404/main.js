@@ -1,9 +1,19 @@
+const body = document.getElementsByTagName("body")[0]
 const game = document.getElementById("game")
 const flag = document.getElementById("flag")
 const nextBtn = document.getElementById("nextBtn")
 const levelNumber = document.getElementById("level")
 
-
+const levelsInfo = [
+  {name: 'levé du soleil', color: '#f8b195'},
+  {name: 'zenith', color: '#f8b195'},
+  {name: 'après midi', color: '#f8b195'},
+  {name: '16h36', color: '#f67280'},
+  {name: '20h00', color: '#c06C84'},
+  {name: 'minuit', color: '#c06C84'},
+  {name: '4h00', color: '#6C5B7B'},
+  {name: '8h03', color: '#355C7D'}
+]
 
 var selectedLevel = parseInt(sessionStorage.getItem('level'))
 
@@ -14,7 +24,8 @@ if (sessionStorage.key('level') === null) {
 }
 
 
-levelNumber.innerHTML = selectedLevel + 1
+levelNumber.innerHTML = levelsInfo[selectedLevel].name
+body.style.background = levelsInfo[selectedLevel].color
 
 nextLevel = () => {
   location.reload()
@@ -205,6 +216,9 @@ move = (playerId, direction) => {
       if (selectedLevel + 1 === levels.length) {
         sessionStorage.setItem('level', 0)
         location.replace('/')
+      }
+      else {
+        sessionStorage.setItem('level', selectedLevel + 1)
       }
       nextBtn.disabled = false
     }
