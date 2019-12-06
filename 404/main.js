@@ -283,3 +283,12 @@ Mousetrap
 .bind('d', () => {
   move('playerC', 'right')
 })
+
+
+
+Mousetrap
+.bind('enter', () => {
+  if (!nextBtn.disabled) {
+    nextLevel()
+  }
+})
