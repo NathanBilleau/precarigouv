@@ -146,7 +146,7 @@ move = (playerId, direction) => {
       && (
         (!(actualPosition(playerId).y - 1 === actualPosition('playerA').y)
       || !(actualPosition(playerId).x === actualPosition('playerA').x))
-        ||  !(actualPosition(playerId).y - 1 === actualPosition('playerB').y)
+        &&  !(actualPosition(playerId).y - 1 === actualPosition('playerB').y)
       || !(actualPosition(playerId).x === actualPosition('playerB').x))
       && (!(actualPosition(playerId).y - 1 === actualPosition('playerC').y)
       || !(actualPosition(playerId).x === actualPosition('playerC').x)))
@@ -162,7 +162,7 @@ move = (playerId, direction) => {
         (
           !(actualPosition(playerId).y + 1 === actualPosition('playerA').y)
         || !(actualPosition(playerId).x === actualPosition('playerA').x))
-        || !(actualPosition(playerId).y + 1 === actualPosition('playerB').y)
+        && !(actualPosition(playerId).y + 1 === actualPosition('playerB').y)
       || !(actualPosition(playerId).x === actualPosition('playerB').x))
       && (!(actualPosition(playerId).y + 1 === actualPosition('playerC').y)
       || !(actualPosition(playerId).x === actualPosition('playerC').x))
