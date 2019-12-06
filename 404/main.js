@@ -21,7 +21,7 @@ nextLevel = () => {
 }
 
 resetProgression = () => {
-  localStorage.setItem('level', 0)
+  sessionStorage.setItem('level', 0)
   location.reload()
 }
 
@@ -202,7 +202,10 @@ move = (playerId, direction) => {
   }
 
     if (flagPosition.x === actualPosition('playerA').x && flagPosition.y === actualPosition('playerA').y) {
-      sessionStorage.setItem('level', selectedLevel + 1)
+      if (selectedLevel + 1 === levels.length) {
+        sessionStorage.setItem('level', 0)
+        location.replace('/')
+      }
       nextBtn.disabled = false
     }
 
