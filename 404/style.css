@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game {
+  height: 500px;
+  width: 500px;
+  background: #ABCBAC;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  justify-items: center;
+  align-items: center;
+
+  background-image: url('pics/glace.jpg');
+  background-repeat: repeat;
+  background-size: 100px;
+}
+
+.obstacle {
+  height: 70%;
+  width: 70%;
+  background-image: url('pics/caillou.png');
+  background-size: cover;
+}
+
+
+#flag {
+  height: 70%;
+  width: 70%;
+
+  background-image: url('pics/drapeauJOLI.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  grid-row: 5 / auto;
+  grid-column: 5 / auto;
+  z-index: 99999;
+}
+
+.player {
+  height: 50%;
+  width: 50%;
+  border-radius: 50px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  z-index: 999;
+  display: none;
+}
+
+.player.visible {
+  display: flex;
+}
+
+#playerA {
+  background-image: url('pics/4_rouge.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#playerB {
+  background-image: url('pics/0_jaune.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#playerC {
+  background-image: url('pics/4_violet.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
